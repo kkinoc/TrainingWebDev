@@ -1,0 +1,170 @@
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins',sans-serif;
+/*
+	background: linear-gradient(green,black,yellow,pink);
+	animation: rotate  2slinear infinite;
+*/
+}
+body{
+	display: flex;
+	height: 100vh;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	text-shadow: 1px 0 white;
+/*	background: #151515;*/
+	background: radial-gradient(white,black,grey,black,white);
+	
+/*	You can test this one out by commenting the top one*/
+/*	background: linear-gradient(white,black,grey,black,white);*/
+	animation: rotate 1.5s linear infinite;
+/*	You can try this one out for the background color*/
+/*	background: linear-gradient(green, black)*/
+}
+.login-form{
+	position: relative;
+	width: 370px;
+	height: auto;
+	background: #444;
+	padding: 40px 35px 60px;
+	box-sizing: border-box;
+	border: 11px double #A770A;
+	border-radius: 5px;
+	box-shadow: inset 0 0 11px red;
+	
+}
+.login-form:hover{
+	box-shadow: inset 0 0 111px red;
+	border-collapse: collapse;
+/*
+	border-right-color: yellow;
+	border-bottom-color: yellow;
+	border-left-color: yellow;
+	border-top-color: yellow;
+	border-top-style: inset; 
+	border-right-style: groove;
+	border-bottom-style: ridge;
+	border-left-style: solid;
+	background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+*/
+  	animation: rotate 3600s linear infinite;
+	filter: blur(14px);
+		
+}
+.text{
+	font-size: 30px;
+	color: #c7c7c7;
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+form{
+	margin-top: 40px;
+}
+form .lightning{
+	margin-top: 20px;
+	display: flex;
+}
+.lightning .fas{
+	height: 50px;
+	width: 60px;
+	color: white;
+	font-size: 20px;
+	line-height: 50px;
+	border: 80px double #A770A;
+/*	border-right: none;*/
+	
+	border-radius: 15px 0 0 15px;
+	background: linear-gradient(#888,#444);
+}
+.lightning input,form button{
+	height: 50px;
+	width: 100%;
+	outline: none;
+	font-size: 19px;
+	color: #FDFDFD;
+	padding: 0 15px;
+	border-radius: 20px 5px 5px 0;
+	border: 80px double #A770A;
+	caret-color: #339933;
+	background: linear-gradient(#888,#444);
+
+}
+input:focus{
+	color: #000FB8;
+	box-shadow: 0 0 5px rgba(0,255,0,.2),
+			  inset 0 0 5px rgba(0,255,0,.1);
+	background: radial-gradient(red,black);
+/*
+	background: radial-gradient(red, black)
+	background: linear-gradient(#333933,#222922);
+*/
+	animation: glow .8s ease-out infinite alternate;
+}
+@keyframes glow {
+	0%{
+		border-color: #010D90;
+		box-shadow: 0 0 5px rgba(0,255,0,.2),
+				inset 0 0 5px rgba(0,0,0,.1);
+	}
+	100%{
+		border-color: #6f6;
+		box-shadow: 0 0 20px rgba(0,255,0,.6),
+				inset 0 0 10px rgba(0,255,0,.4);
+	}
+}
+button{
+	margin-top: 30px;
+	border-radius: 10px!important;
+	font-weight: 600;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+button:hover{
+	color: #339933;
+	border: 1px solid #339933;
+	box-shadow: 0 0 5px rgba(0,255,0,.3),
+			  0 0 10px rgba(0,255,0,.2),
+			  0 0 15px rgba(0,255,0,.1),
+			  0 2px 0 black;
+}
+.link{
+	margin-top: 25px;
+	color: #FFF3F3;
+}
+.link a{
+	color: #339933;
+	text-decoration: none;
+}
+.link a:hover{
+	text-decoration: underline;
+}
+
+.outer:hover span:nth-child(2){
+  filter: blur(14px);
+}
+.outer:hover{
+  background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+  animation: rotate 1.5s linear infinite;
+}
+@keyframes rotate {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+@media (max-width: 640px){
+  .center{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .outer{
+    margin: 50px 0;
+  }
+}
+
